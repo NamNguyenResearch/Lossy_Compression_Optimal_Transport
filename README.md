@@ -1,19 +1,5 @@
-# Cross_domain_LC
-The offcial implementation of our paper "Cross-Domain Lossy Crompression as Entropy Constrained Optimal Transport".
+PyTorch Code for Lossy Compression with Distribution Shift as Entropy Constrained Optimal Transport [1].
 
-## 1. To reproduce our experiments for image super-resolution:
-### with common randomness
-python train_super_res.py --common True --latent_dim=2
-### without common randomness
-python train_super_res.py --common False --latent_dim=2
+# Reference
 
-
-## 2. To reproduce our experiments for image denoising:
-### with common randomness
-python train_dn.py --common True --latent_dim=4
-### without common randomness
-python train_dn.py --common False --latent_dim=4
-
-##
-*Note that latent_dim controls the bit rate.
-
+[1] George Zhang, Jingjing Qian, Jun Chen, and Ashish Khisti. Lossy Compression with Distribution Shift as Entropy Constrained Optimal Transport. In M. Ranzato, A. Beygelzimer, Y. Dauphin, P.S. Liang, and J. Wortman Vaughan, editors, Advances in Neural Information Processing Systems, volume 34, pages 11517–11529. Curran Associates, Inc., 2021.
